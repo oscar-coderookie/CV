@@ -1,0 +1,26 @@
+<div class="container-xl">
+  <div class="row mx-auto">
+    <div class="col-sm-10 col-lg-6 mx-auto" *ngFor="let render of renders">
+      <div class="projects card my-3">
+        <div class="card-header">
+          <h2 class="m-0 text-center">{{ render.title }}</h2>
+        </div>
+        <img
+          *ngFor="let photo of render.photos"
+          class="d-block w-100"
+          src="{{ photo }}"
+          alt="carrusel"
+        />
+        <div class="card-body">
+          <h4 class="fw-bold">Software Utilizado:</h4>
+          <p>{{ render.software }}</p>
+          <h4 class="fw-bold">Empresa</h4>
+          <p>{{ render.enterprise }}</p>
+          <h4 class="fw-bold">Descripción:</h4>
+          <p>{{ render.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

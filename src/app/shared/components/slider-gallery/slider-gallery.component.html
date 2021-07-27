@@ -1,0 +1,32 @@
+<section class="gallery-works ">
+  <h1 class="gallery-works__title ">
+    Página de Game of Thrones:
+  </h1>
+ 
+  <section class="body">
+    <input class="gallery-works__input" type="radio" name="position" checked />
+    <input class="gallery-works__input" type="radio" name="position" />
+    <input class="gallery-works__input" type="radio" name="position" />
+    <input class="gallery-works__input" type="radio" name="position" />
+    <input class="gallery-works__input" type="radio" name="position" />
+    <main id="carousel">
+      <div class="item-got" *ngFor="let image of images">
+        <img class="gallery-works__img" src="{{ image.url }}" alt="" />
+      </div>
+    </main>
+  </section>
+  <p class="gallery-works__description ">
+    Trabajo realizado en Angular: consiste en una página interactiva donde los
+    datos son llamados desde la Api oficial de la serie. desarrollado en el Bootcamp Full
+    Stack de mayo.
+  </p>
+  <div class="d-flex align-items-center justify-content-center ">
+    <h2 class="gallery-works__subtitle my-0 ">Enlace a la web desplegada:</h2>
+    <a
+      class="gallery-works__description"
+      href="https://oscar-coderookie.github.io/GOT/"
+      target="_blank"
+      >https://oscar-coderookie.github.io/GOT/</a
+    >
+  </div>
+</section>

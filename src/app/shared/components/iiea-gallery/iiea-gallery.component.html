@@ -1,0 +1,36 @@
+<section class="gallery-iiea">
+  <div class="container-xl">
+    <h1 class="gallery-iiea__title ">
+      Backend Web Oficial Instituto Internacional de Implantología y Estética
+      Avanzadas
+    </h1>
+
+    <section class="body">
+      <input class="gallery-iiea__input" type="radio" name="position" checked />
+      <input class="gallery-iiea__input" type="radio" name="position" />
+      <input class="gallery-iiea__input" type="radio" name="position" />
+      <input class="gallery-iiea__input" type="radio" name="position" />
+      <input class="gallery-iiea__input" type="radio" name="position" />
+      <main id="carousel">
+        <div class="item" *ngFor="let image of iieaImages">
+          <img class="gallery-iiea__img" src="{{ image.url }}" alt="" />
+        </div>
+      </main>
+    </section>
+    <p class="gallery-iiea__description">
+      Backend dinámico desarrollado para una institución educativa de medicina
+      oral y estética. Trabajo realizado con Node.js, nodemon, manejo de
+      Handlebars, y CRUD completo por medio de formularios interactivos, subida
+      de imágenes y servidor desplegado en mongo ATLAS.
+    </p>
+    <div class="d-flex align-items-center justify-content-center">
+      <h2 class="gallery-iiea__subtitle my-0">Enlace a la web desplegada:</h2>
+      <a
+        class="gallery-iiea__description"
+        href="https://app-test-iiea.herokuapp.com/"
+        target="_blank"
+        >https://app-test-iiea.herokuapp.com/</a
+      >
+    </div>
+  </div>
+</section>

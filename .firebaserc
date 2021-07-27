@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "api-rest-curriculum-oscar": {
+      "hosting": {
+        "firebase-app": [
+          "api-rest-curriculum-oscar"
+        ]
+      }
+    }
+  }
+}
