@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng deploy firebase-app --base-href=/cv-oscar-serna/  "
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
